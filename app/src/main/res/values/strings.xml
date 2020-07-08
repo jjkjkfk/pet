@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="hello">Hello 哈啊哈</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="交谈按钮">交谈</string>
+    <string name="button">Button</string>
+    <string name="textview">TextView</string>
+</resources>

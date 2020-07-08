@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pet_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/room"
+    tools:visibility="visible">
+
+    <Button
+        android:id="@+id/shop"
+        android:layout_width="86dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="64dp"
+        android:onClick="petToShop"
+        android:text="商店"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lv2"
+        android:layout_width="46dp"
+        android:layout_height="36dp"
+        android:text="Exp："
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv" />
+
+    <ImageView
+        android:id="@+id/pet"
+        android:layout_width="215dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="100dp"
+        android:onClick="talk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/lv2" />
+
+    <ImageButton
+        android:id="@+id/back_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="toMain"
+        android:src="@drawable/abc_vector_test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/talk_box"
+        android:layout_width="312dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="60dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/box"
+        android:padding="25px"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/pet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lv"
+        android:layout_width="46dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="64dp"
+        android:text="LV"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lv_num"
+        android:layout_width="76dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="64dp"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/lv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/exp_num"
+        android:layout_width="76dp"
+        android:layout_height="36dp"
+        android:text="100"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toEndOf="@+id/lv2"
+        app:layout_constraintTop_toBottomOf="@+id/lv_num" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="86dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="64dp"
+        android:onClick="upgrade"
+        android:text="升级"
+        app:layout_constraintStart_toEndOf="@+id/lv_num"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/init"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="init"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star" />
+
+    <Button
+        android:id="@+id/next_talk"
+        android:layout_width="408dp"
+        android:layout_height="731dp"
+        android:background="?android:attr/panelBackground"
+        android:onClick="nextTalk"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
